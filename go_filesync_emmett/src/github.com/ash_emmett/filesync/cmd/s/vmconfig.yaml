@@ -1,0 +1,20 @@
+# ------------------
+# vmconfig.yaml file
+# ------------------
+
+---
+create:
+  qm:
+    id: 5000
+    name: VMTestCreation
+    memory: 8192
+    cores: 8
+    sockets: 1
+    scsihw: virtio-scsi-pci
+    scsi0: DeadFS:50
+    net0:
+      model: virtio
+      bridge: vmbr0
+ #   ide2:
+ #     - "+event.Name+"
+ #     media: cdrom
